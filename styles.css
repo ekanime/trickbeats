@@ -1,0 +1,175 @@
+body{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+    box-shadow: black
+}
+nav {
+  text-align: right;
+  margin: 3px;
+}
+
+header{
+    color:black;
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    position: fixed;
+    text-align: center;
+    bottom: 1%;
+    opacity: 0.8;
+}
+
+
+
+.button{
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Titan One";
+    cursor: pointer;
+    margin: auto;  
+}
+
+.button:hover{
+    transform: scale(1.1)
+}
+
+.button-wrapper{
+    text-align: center;
+}
+.logo{
+    padding: 1px;
+    font-size: 30px;
+    width: 100px;
+    /* margin: 15px 12px; */
+}
+.logo:hover{
+    transform: scale(1.1)
+}
+.logo-wrapper{
+    display: inline-block
+}
+
+.fa {
+    padding: 20px;
+    font-size: 10px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa-soundcloud {
+    background: #ff5500;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa:hover{
+      transform: scale(1.1);
+      color: white;
+      text-decoration: none;
+  }
+
+  .social-media-buttons{
+        display: flex;
+        justify-content: space-between;
+  }
+
+
+  .card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin:5px;
+    justify-content: space-between;
+    padding-right: 5.54611px;
+    padding-left: 5.54611px;
+  }
+
+  .list-group-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .btn:hover{
+      transform: scale(1.1);
+  }
+
+
+  .jumbotron-fluid{
+    background-color: transparent;
+   
+  }
+  .caption{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+  }
+  .caption-text{ 
+    font-size: 60px;
+    font-family: 'Gochi Hand';
+}
+  .prices-banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .prices-card{
+      width: 170px;
+      height: 350px;
+  }
+  .prices-card:hover{
+      transform: scale(1.1);
+  }
