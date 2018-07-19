@@ -178,4 +178,118 @@ footer{
     right: 0;
     padding: 25px;
 }
- 
+.inner-card{
+    width:18rem;
+   
+}
+
+@media only screen and (width:640px){
+    .card-wrapper{
+        padding-left:150px;
+    }
+    .caption-text{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (width:360px){
+    .caption-text{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (width:411px){
+    .caption-text{
+        font-size: 40px;
+    }
+
+    .card-wrapper{
+        padding-left: 30px;
+    }
+}@media only screen and (width:731px){
+    .inner-card-wrapper{
+        padding-left: 200px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (width:823px){
+    .inner-card-wrapper{
+        padding-left: 250px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (width:320px){
+    .inner-card{
+        width:15.5rem;
+       
+    }
+    .caption-text{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (width:568px){
+    .card-wrapper{
+        padding-left: 115px;
+    }
+    .caption-text{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (width:375px){
+    .card-wrapper{
+        padding-left: 10px;
+    }
+    .caption-text{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (width:667px){
+    .inner-card-wrapper{
+        padding-left: 150px;
+        margin-top: 10px;
+    }
+    .caption-text{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (width:414px){
+    .card-wrapper{
+        padding-left: 35px;
+    }
+    .caption-text{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (width:736px){
+    .inner-card-wrapper{
+        padding-left: 200px;
+        margin-top: 10px;
+    }
+    .caption-text{
+        font-size: 40px;
+    }
+}
+@media only screen and (width:812px){
+    .inner-card-wrapper{
+        padding-left: 250px;
+        margin-top: 10px;
+    }
+    .caption-text{
+        font-size: 40px;
+    }
+}
+@media only screen and (width:768px){
+    .inner-card-wrapper{
+        padding-left: 220px;
+        margin-top: 10px;
+    }
+    .caption-text{
+        font-size: 40px;
+    }
+}
