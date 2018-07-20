@@ -43,6 +43,10 @@ nav {
   text-align: right;
   margin: 3px;
 }
+/* hr{
+    margin-left: 300px;
+    margin-right: 300px;
+} */
 
 header{
     color:black;
@@ -77,6 +81,9 @@ footer{
 
 .button-wrapper{
     text-align: center;
+}
+.chimp-button{
+    margin-left: 35%;
 }
 .logo{
     padding: 1px;
@@ -181,6 +188,11 @@ footer{
 .inner-card{
     width:18rem;
    
+}
+.clear-text{
+    background-color: black;
+    font-family: 'Roboto';
+    font-size:5px;
 }
 
 @media only screen and (width:640px){
