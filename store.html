@@ -91,6 +91,22 @@
     <div class ="container">
         <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/164792734&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
     </div>
+    <div style="height: 30px; width: 3px"></div>
+    <h3 style="font-family: Markazi Text;text-align: center">For enquires regarding exclusive beats and collabs contact me</h3>
+    <div class="container">
+        <form action="mail_handler.php" method="post" name="form">
+            <label for="fname" style="font-family: Markazi Text">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+            <label for="lname" style="font-family: Markazi Text">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email">
+
+            <label for="subject" style="font-family: Markazi Text">Message</label>
+            <textarea id="message" name="msg" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit" class = "button" style="background-color: black">
+        </form>
+    </div>
     <div>
         <!-- Begin MailChimp Signup Form -->
         <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
