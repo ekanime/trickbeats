@@ -83,7 +83,7 @@ footer{
     text-align: center;
 }
 .chimp-button{
-    margin-left: 35%;
+    margin-left: 40%;
 }
 .logo{
     padding: 1px;
@@ -189,11 +189,7 @@ footer{
     width:18rem;
    
 }
-.clear-text{
-    background-color: black;
-    font-family: 'Roboto';
-    font-size:5px;
-}
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -224,6 +220,12 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
+.row{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
 @media only screen and (width:640px){
     .card-wrapper{
         padding-left:150px;
@@ -231,11 +233,17 @@ input[type=submit]:hover {
     .caption-text{
         font-size: 40px;
     }
+    .chimp-button{
+        margin-left: 35%;
+    }
 }
 
 @media only screen and (width:360px){
     .caption-text{
         font-size: 40px;
+    }
+    .chimp-button{
+        margin-left: 25%;
     }
 }
 
@@ -247,10 +255,17 @@ input[type=submit]:hover {
     .card-wrapper{
         padding-left: 30px;
     }
+
+    .chimp-button{
+        margin-left: 28%;
+    }
 }@media only screen and (width:731px){
     .inner-card-wrapper{
         padding-left: 200px;
         margin-top: 10px;
+    }
+    .chimp-button{
+        margin-left: 35%;
     }
 }
 @media only screen and (width:823px){
@@ -268,6 +283,9 @@ input[type=submit]:hover {
     .caption-text{
         font-size: 20px;
     }
+    .chimp-button{
+        margin-left: 15%;
+    }
 }
 
 @media only screen and (width:568px){
@@ -277,6 +295,9 @@ input[type=submit]:hover {
     .caption-text{
         font-size: 30px;
     }
+    .chimp-button{
+        margin-left: 30%;
+    }
 }
 
 @media only screen and (width:375px){
@@ -285,6 +306,9 @@ input[type=submit]:hover {
     }
     .caption-text{
         font-size: 40px;
+    }
+    .chimp-button{
+        margin-left: 25%;
     }
 }
 
@@ -296,6 +320,9 @@ input[type=submit]:hover {
     .caption-text{
         font-size: 40px;
     }
+    .chimp-button{
+        margin-left: 35%;
+    }
 }
 
 @media only screen and (width:414px){
@@ -304,6 +331,9 @@ input[type=submit]:hover {
     }
     .caption-text{
         font-size: 40px;
+    }
+    .chimp-button{
+        margin-left: 25%;
     }
 }
 
@@ -315,6 +345,7 @@ input[type=submit]:hover {
     .caption-text{
         font-size: 40px;
     }
+    
 }
 @media only screen and (width:812px){
     .inner-card-wrapper{
