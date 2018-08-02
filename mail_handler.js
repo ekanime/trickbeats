@@ -1,5 +1,4 @@
-
-$$(('#contactForm','#cont' ).on('submit', 'submitForm')); // step 1: connect submit action to button
+$('#contactForm').on('submit', submitForm); // step 1: connect submit action to button
 function submitForm() {
     // step 2: get data from input fields
     var name = $("#name").val();
