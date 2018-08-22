@@ -50,38 +50,48 @@
     </div>
     <div style="height: 10px; width: 3px"></div>
     <div class="price-banner-wrapper"><div class="price-banner"><h2>Pricing and Licenses</h2></div></div>
-    <div class="card-wrapper">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title"><center>BASIC WAV</center></h5>
-              <h6 class="card-subtitle mb-2 text-muted"><center>$40.00</center></h6>
-              <p class="card-text"><center>This License comes with a tagged WAV file,you can sell upto 5,000 copies of your song and keep 100% of 
-                  your royalties.This is perfect for indie artits working on small projects with little budget
-              </center> </p>
-              <div style="height: 77px; width: 3px"></div>
-              <div style="text-align:center;"><a href="pricing.html" class="btn btn-secondary">Learn More</a></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title"><center>BASIC WAV</center></h5>
+                      <h6 class="card-subtitle mb-2 text-muted"><center>$40.00</center></h6>
+                      <hr>
+                      <p class="card-text"><center>This License comes with a tagged WAV file,you can sell upto 5,000 copies of your song and keep 100% of 
+                          your royalties.This is perfect for indie artits working on small projects with little budget
+                      </center> </p>
+                      <div style="height: 77px; width: 3px"></div>
+                      <div style="text-align:center;"><a href="pricing.html" class="btn btn-secondary">Learn More</a></div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title"><center>PREMIUM WAV</center></h5>
-              <h6 class="card-subtitle mb-2 text-muted"><center>$150.00</center></h6>
-              <p class="card-text"><center>This License comes with an UNTAGGED WAV file and Trackouts,you can sell upto 100,000 copies of your song and keep 100% of your
-                  royalties. It is perfect for indie artists who prefer to work with trackouts and a higher distribution limit
-              </center></p>
-              <div style="height: 30px; width: 3px"></div>
-              <div style="text-align:center;"><a href="pricing.html" class="btn btn-secondary">Learn More</a></div>
+            <div class = "col-lg-4 col-sm-12 bob">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"><center>PREMIUM WAV</center></h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><center>$150.00</center></h6>
+                        <hr>
+                        <p class="card-text"><center>This License comes with an UNTAGGED WAV file and Trackouts,you can sell upto 100,000 copies of your song and keep 100% of your
+                            royalties. It is perfect for indie artists who prefer to work with trackouts and a higher distribution limit
+                        </center></p>
+                        <div style="height: 30px; width: 3px"></div>
+                        <div style="text-align:center;"><a href="pricing.html" class="btn btn-secondary">Learn More</a></div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="inner-card-wrapper">
-            <div class="card inner-card">
-                <div class="card-body">
-                <h5 class="card-title"><center>PREMIUM UNLIMITED</center></h5>
-                <h6 class="card-subtitle mb-2 text-muted"><center>$400.00</center></h6>
-                <p class="card-text"><center>This License comes with an UNTAGGED WAV file and Trackouts,there is no limit to the ammount of copies you can distribute and you keep 100% of your
-                    royalties. It is perfect for indie artists or labels with a very big fan base</center></p>
-                <div style="height: 30px; width: 3px"></div>
-                <div style="text-align:center;"><a href="pricing.html" class="btn btn-secondary">Learn More</a></div>
+            <div class = "col-lg-4 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"><center>PREMIUM WAV</center></h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><center>$150.00</center></h6>
+                        <hr>
+                        <p class="card-text"><center>This License comes with an UNTAGGED WAV file and Trackouts,you can sell upto 100,000 copies of your song and keep 100% of your
+                            royalties. It is perfect for indie artists who prefer to work with trackouts and a higher distribution limit
+                        </center></p>
+                        <div style="height: 30px; width: 3px"></div>
+                        <div style="text-align:center;"><a href="pricing.html" class="btn btn-secondary">Learn More</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,7 +104,8 @@
     <div style="height: 30px; width: 3px"></div>
     <h3 style="font-family: Markazi Text;text-align: center">For enquires regarding exclusive beats and collabs contact me</h3>
     <div class="container">
-        <form action='mailHandling.php' method="POST">
+        <form id='contact-form'action="https://formspree.io/trickbeatsent@gmail.com"
+        method="POST">
             <label for="name" style="font-family: Markazi Text">Full Name</label>
             <input type="text" id="name" name="name" placeholder="Your name.." required>
 
@@ -104,30 +115,11 @@
             <label for="subject" style="font-family: Markazi Text">Message</label>
             <textarea id="message" name="msg" placeholder="Write something.." style="height:200px"></textarea>
 
-            <input type="submit" name="submit" value="Submit" class = "button" style="background-color: black; font-family: 'Roboto'">
+            <input type="submit" name="submit" value="Send" class = "button" style="background-color: black; font-family: 'Roboto'">
         </form>
 
     </div>
-    <div>
-        <!-- Begin MailChimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-        <style type="text/css">
-            #mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; }
-            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-        </style>
-        <div id="mc_embed_signup" class="chimp-button" >
-        <form action="https://myflashstore.us15.list-manage.com/subscribe/post?u=cec0200b731c777600a8bebc5&amp;id=0a25f9be0a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cec0200b731c777600a8bebc5_0a25f9be0a" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Join my Mailing List" style = "background-color: black; font-family: 'Roboto'" name="subscribe" id="mc-embedded-subscribe"></div>
-            </div>
-        </form>
-        </div>
-
-        <!--End mc_embed_signup-->
-    </div>
+   
     <footer> 
         <div class="social-media-buttons">
             <a href="https://twitter.com/TrickbeatsNG" class="fa fa-twitter"></a>
@@ -137,10 +129,10 @@
         </div>
         <div>
             <script src="script.js"></script>
-            <script src="mail_handler.js"></script>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"cec0200b731c777600a8bebc5","lid":"0a25f9be0a"}) })</script>
         </div>
     </footer>
 </body>

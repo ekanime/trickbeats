@@ -190,6 +190,7 @@ footer{
    
 }
 
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -216,19 +217,21 @@ input[type=submit]:hover {
 
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: transparent;
     padding: 20px;
 }
 
-.row{
-    margin-bottom: 20px;
-    text-align: center;
+
+.card{
+   left:9%;
+   margin:2px;
 }
 
 
+
 @media only screen and (width:640px){
-    .card-wrapper{
-        padding-left:150px;
+    .card{
+        left:20%;
     }
     .caption-text{
         font-size: 40px;
@@ -239,6 +242,9 @@ input[type=submit]:hover {
 }
 
 @media only screen and (width:360px){
+    .card{
+        left:1%;
+    }
     .caption-text{
         font-size: 40px;
     }
@@ -260,9 +266,8 @@ input[type=submit]:hover {
         margin-left: 28%;
     }
 }@media only screen and (width:731px){
-    .inner-card-wrapper{
-        padding-left: 200px;
-        margin-top: 10px;
+    .card{
+        left:20%;
     }
     .chimp-button{
         margin-left: 35%;
@@ -276,9 +281,8 @@ input[type=submit]:hover {
 }
 
 @media only screen and (width:320px){
-    .inner-card{
-        width:15.5rem;
-       
+    .card{
+        left:10%;
     }
     .caption-text{
         font-size: 20px;
@@ -289,6 +293,9 @@ input[type=submit]:hover {
 }
 
 @media only screen and (width:568px){
+    .card{
+        left:20%;
+    }
     .card-wrapper{
         padding-left: 115px;
     }
@@ -301,6 +308,10 @@ input[type=submit]:hover {
 }
 
 @media only screen and (width:375px){
+    .card{
+        left:1%;
+        right:60%;
+    }
     .card-wrapper{
         padding-left: 10px;
     }
@@ -313,6 +324,9 @@ input[type=submit]:hover {
 }
 
 @media only screen and (width:667px){
+    .card{
+        left:20%;
+    }
     .inner-card-wrapper{
         padding-left: 150px;
         margin-top: 10px;
@@ -326,9 +340,6 @@ input[type=submit]:hover {
 }
 
 @media only screen and (width:414px){
-    .card-wrapper{
-        padding-left: 35px;
-    }
     .caption-text{
         font-size: 40px;
     }
@@ -338,9 +349,8 @@ input[type=submit]:hover {
 }
 
 @media only screen and (width:736px){
-    .inner-card-wrapper{
-        padding-left: 200px;
-        margin-top: 10px;
+    .card{
+        left:20%;
     }
     .caption-text{
         font-size: 40px;
@@ -348,20 +358,25 @@ input[type=submit]:hover {
     
 }
 @media only screen and (width:812px){
-    .inner-card-wrapper{
-        padding-left: 250px;
-        margin-top: 10px;
+    .card{
+        left:30%;
     }
     .caption-text{
         font-size: 40px;
     }
 }
 @media only screen and (width:768px){
-    .inner-card-wrapper{
-        padding-left: 220px;
-        margin-top: 10px;
+    .card{
+        left:30%;
     }
     .caption-text{
         font-size: 40px;
     }
+}
+
+@media only screen and (width:1024px){
+    .card{
+       left:1%;
+    }
+    
 }
