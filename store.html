@@ -94,12 +94,12 @@
     <div style="height: 30px; width: 3px"></div>
     <h3 style="font-family: Markazi Text;text-align: center">For enquires regarding exclusive beats and collabs contact me</h3>
     <div class="container">
-        <form action="welcome.php" method="post" name="form">
-            <label for="name" style="font-family: Markazi Text">Name</label>
+        <form action='mailHandling.php' method="POST">
+            <label for="name" style="font-family: Markazi Text">Full Name</label>
             <input type="text" id="name" name="name" placeholder="Your name.." required>
 
             <label for="email" style="font-family: Markazi Text">Email</label>
-            <input type="text" id="email" name="email" placeholder="Your email">
+            <input type="text" id="email" name="email" placeholder="Your email" required>
 
             <label for="subject" style="font-family: Markazi Text">Message</label>
             <textarea id="message" name="msg" placeholder="Write something.." style="height:200px"></textarea>
