@@ -27,7 +27,6 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
   border: 1px solid transparent;
   border-radius: 5px;
@@ -43,10 +42,6 @@ nav {
   text-align: right;
   margin: 3px;
 }
-/* hr{
-    margin-left: 300px;
-    margin-right: 300px;
-} */
 
 header{
     color:black;
@@ -62,10 +57,10 @@ footer{
 }
 
 
-
 .button{
     color: white;
     background-color: black;
+    opacity: 0.8;
     border-radius: 15px;
     padding: 10px 20px;
     display: inline-block;
@@ -133,22 +128,6 @@ footer{
   }
 
 
-  .card-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    margin:5px;
-    justify-content: space-between;
-    padding-right: 5.54611px;
-    padding-left: 5.54611px;
-  }
-
-  .list-group-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 10px;
-  }
-
   .btn:hover{
       transform: scale(1.1);
   }
@@ -185,10 +164,7 @@ footer{
     right: 0;
     padding: 25px;
 }
-.inner-card{
-    width:18rem;
-   
-}
+
 
 
 input[type=text], select, textarea {
@@ -273,12 +249,6 @@ input[type=submit]:hover {
         margin-left: 35%;
     }
 }
-@media only screen and (width:823px){
-    .inner-card-wrapper{
-        padding-left: 250px;
-        margin-top: 10px;
-    }
-}
 
 @media only screen and (width:320px){
     .card{
@@ -312,9 +282,6 @@ input[type=submit]:hover {
         left:1%;
         right:60%;
     }
-    .card-wrapper{
-        padding-left: 10px;
-    }
     .caption-text{
         font-size: 40px;
     }
@@ -326,10 +293,6 @@ input[type=submit]:hover {
 @media only screen and (width:667px){
     .card{
         left:20%;
-    }
-    .inner-card-wrapper{
-        padding-left: 150px;
-        margin-top: 10px;
     }
     .caption-text{
         font-size: 40px;
