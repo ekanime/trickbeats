@@ -1,96 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
-    padding: 25px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: 'Poppins', sans-serif;
+    margin:0px;
 }
-
-a{
-    text-decoration: none;
-    color: black;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: transparent;
-}
-
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-  border: 1px solid transparent;
-  border-radius: 5px;
-  
-}
-
-a:hover{
-    text-decoration: none;
-    color: black;
-    box-shadow: black
-}
-nav {
-  text-align: right;
-  margin: 3px;
-}
-
-header{
-    color:black;
-    display: flex;
-    justify-content: space-between;
-}
-footer{
+.background{
+    background: url("/images/bg.png");
+    width: 100%;
+    height: 100%;
     position: fixed;
-    text-align: center;
-    bottom: 1%;
-    opacity: 0.8;
+    z-index: -1;
+}
+.main-header{
+    width: 100%;
+    padding: 8px 16px;
+    background-color: white;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    border-bottom: 2px solid black;
+
+   
+}
+.main-header>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-header__brand{
+    text-decoration: none;
+    font-weight: bold;
+    font-size:22px;
+}
+.main-nav{
+    display: inline-block;
+    text-align: right;
+    width:calc(100% - 74px);
+    vertical-align: middle;
+}
+
+.main-nav__items{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.main-nav__item{
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-nav__item > a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px 0;
+    color:black;
     
 }
+#about{
+    background: white;
+    padding: 50px;
+}
 
+#overview{
+    /* background-color: #ff0055; */
+    width: 100%;
+    height:650px;
+}
+.section-title{
+    color:black;
+    font-family: inherit;
+    text-align: center;
+}
+.store{
+    background-color: white;
+    padding:10px 0;
+}
+#beats{
+    position: relative;
+    margin:20px 0;
+    padding-bottom:50px;
+}
+.beats-frame{
+    position: relative;
+    text-align: center;
+    z-index: 0;
+}
+.plans-content{
+    padding-top: 50px;
+}
 
-.button{
-    color: white;
-    background-color: black;
-    opacity: 0.8;
-    border-radius: 15px;
-    padding: 10px 20px;
+.plan h3{
+    font-size: 20px;
+}
+
+.plan__list{
+    width:80%;
+    margin:auto;
+    text-align: center;
+}
+.plan{
+    background: white;
+    text-align: center;
+    padding: 16px;
+    margin:8px;
     display: inline-block;
-    font-size: 16px;
-    font-family: "Titan One";
+    width:30%;
+    vertical-align: middle;
+    border: 2px solid black;
+}
+
+
+.plan__title{
+    color:black;
+}
+.plan__price{
+    color:rgb(133, 129, 129);
+}
+
+.plan__features{
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+}
+.plan__features li{
+    margin:8px 0px;
+}
+.button{
+    background-color: rgb(43, 43, 43);
+    color:#ffff;
+    font:inherit;
+    border: 1.5px solid rgb(43,43,43);
+    padding:8px;
+    border-radius: 8px;
     cursor: pointer;
-    margin: auto;  
+    font-weight: bold;
 }
 
 .button:hover{
-    transform: scale(1.1)
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
 }
-
-.button-wrapper{
-    text-align: center;
-}
-.chimp-button{
-    margin-left: 40%;
-}
-.logo{
-    padding: 1px;
-    font-size: 30px;
-    width: 100px;
-    /* margin: 15px 12px; */
-}
-.logo:hover{
-    transform: scale(1.1)
-}
-.logo-wrapper{
-    display: inline-block
+.button:focus{
+    outline: none;
 }
 
 .fa {
@@ -127,219 +180,32 @@ footer{
         justify-content: space-between;
   }
 
-
   .btn:hover{
       transform: scale(1.1);
   }
 
-
-  .jumbotron-fluid{
-    background-color: transparent;
-   
-  }
-  .caption{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);   
-  }
-  .caption-text{ 
-    font-size: 60px;
-    font-family: 'Gochi Hand';
+.main-footer{
+    padding:32px;
+    margin-top:48px;
+    background-color: rgba(29, 28, 28, 0.9);
 }
-.price-banner{
-    border-style: solid;
+.main-footer__links{
+    list-style:none;
+    margin:0;
+    padding:0;
     text-align: center;
-    color:white;
-    background-color: black;
-    font-family: "Josefin+Sans"
 }
-.price-banner-wrapper{
-    border-style: solid;
-    background-color: transparent;
+
+.main-footer__link,
+.main-footer__link-button{
+    display: inline-block;
+    margin: 0 16px;
 }
-.soundcloud-frame{
-    z-index: -1;
-    bottom:0;
-    right: 0;
-    padding: 25px;
+
+.main-footer__link a{
+   text-decoration: none;
+   color:white;
 }
 
 
 
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.container {
-    border-radius: 5px;
-    background-color: transparent;
-    padding: 20px;
-}
-
-
-.card{
-   left:9%;
-   margin:2px;
-}
-
-
-
-@media only screen and (width:640px){
-    .card{
-        left:20%;
-    }
-    .caption-text{
-        font-size: 40px;
-    }
-    .chimp-button{
-        margin-left: 35%;
-    }
-}
-
-@media only screen and (width:360px){
-    .card{
-        left:1%;
-    }
-    .caption-text{
-        font-size: 40px;
-    }
-    .chimp-button{
-        margin-left: 25%;
-    }
-}
-
-@media only screen and (width:411px){
-    .caption-text{
-        font-size: 40px;
-    }
-
-    .card-wrapper{
-        padding-left: 30px;
-    }
-
-    .chimp-button{
-        margin-left: 28%;
-    }
-}@media only screen and (width:731px){
-    .card{
-        left:20%;
-    }
-    .chimp-button{
-        margin-left: 35%;
-    }
-}
-
-@media only screen and (width:320px){
-    .card{
-        left:10%;
-    }
-    .caption-text{
-        font-size: 20px;
-    }
-    .chimp-button{
-        margin-left: 15%;
-    }
-}
-
-@media only screen and (width:568px){
-    .card{
-        left:20%;
-    }
-    .card-wrapper{
-        padding-left: 115px;
-    }
-    .caption-text{
-        font-size: 30px;
-    }
-    .chimp-button{
-        margin-left: 30%;
-    }
-}
-
-@media only screen and (width:375px){
-    .card{
-        left:1%;
-        right:60%;
-    }
-    .caption-text{
-        font-size: 40px;
-    }
-    .chimp-button{
-        margin-left: 25%;
-    }
-}
-
-@media only screen and (width:667px){
-    .card{
-        left:20%;
-    }
-    .caption-text{
-        font-size: 40px;
-    }
-    .chimp-button{
-        margin-left: 35%;
-    }
-}
-
-@media only screen and (width:414px){
-    .caption-text{
-        font-size: 40px;
-    }
-    .chimp-button{
-        margin-left: 25%;
-    }
-}
-
-@media only screen and (width:736px){
-    .card{
-        left:20%;
-    }
-    .caption-text{
-        font-size: 40px;
-    }
-    
-}
-@media only screen and (width:812px){
-    .card{
-        left:30%;
-    }
-    .caption-text{
-        font-size: 40px;
-    }
-}
-@media only screen and (width:768px){
-    .card{
-        left:30%;
-    }
-    .caption-text{
-        font-size: 40px;
-    }
-}
-
-@media only screen and (width:1024px){
-    .card{
-       left:1%;
-    }
-    
-}
