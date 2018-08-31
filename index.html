@@ -8,39 +8,59 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="main.css"> -->
 </head>
 
 <body>
+    <div class="backdrop"></div>
     <div class="background"></div>
     <header class="main-header">
-            <div>
-                <a href="index.html" class="main-header__brand">
-                    Trickbeats
-                </a>
-            </div>
-            <nav class="main-nav">
-                <ul class="main-nav__items">
-                    <li class="main-nav__item">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#catalogue">Catalogue</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#plans">Licensing</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <div>
+            <button class="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </button>
+        </div>
+        <div>
+            <a href="index.html" class="main-header__brand">
+                Trickbeats
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#catalogue">Catalogue</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#plans">Licensing</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="about.html">About</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="index.html/#catalouge">Catalogue</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="index.html/#plans">Licensing</a>
+            </li>
+        </ul>
+    </nav>
     <main>
-        <section id="overview">
-            <h1>TRICKBEATS</h1>
+        <section class="overview">
+            <h1 class="overview-text">TRICKBEATS</h1>
         </section>
-        <section class="store">
+         <section class="store">
             <div id="catalogue">
                 <h1 class="section-title">Catalogue</h1>
                 <div class="beats-frame">
@@ -102,8 +122,8 @@
                 <textarea id="message" name="msg" placeholder="Write something.." style="height:200px"></textarea>
     
                 <input type="submit" name="submit" value="Send" class = "button" style="background-color: black; font-family: 'Roboto'">
-            </form> -->
-        </section>
+            </form>
+        </section> -->
     </main>
     <footer class="main-footer">
         <nav>
@@ -139,6 +159,7 @@
             </ul>
         </nav>
     </footer>
+    <script src ="script.js"></script>
 </body>
 
 </html>
