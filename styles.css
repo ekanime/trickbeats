@@ -47,7 +47,7 @@ body{
     font-size:1.375rem;
 }
 .main-nav{
-    display: inline-block;
+    display:none;
     text-align: right;
     width:calc(100% - 74px);
     vertical-align: middle;
@@ -124,6 +124,8 @@ body{
     width: 100%;
     position: relative;
     left: 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 #beats{
     /* position: relative; */
@@ -135,6 +137,10 @@ body{
     text-align: center;
     z-index: 0;
 }
+/* iframe{
+    width: 40rem;
+} */
+
 .plans-content{
     padding-top: 3.125rem;
 }
@@ -144,19 +150,21 @@ body{
 }
 
 .plan__list{
-    width:80%;
+    width:100%;
     margin:auto;
     text-align: center;
+
 }
 .plan{
     background: white;
-    text-align: center;
     padding: 1rem;
     margin:0.5rem;
-    display: inline-block;
-    width:30%;
-    vertical-align: middle;
     border: 2px solid black;
+    font-size: 0.8rem;
+    max-width: 18.75rem;
+    text-align: center;
+    /* position: relative;
+    left:26%; */
 }
 
 
@@ -175,15 +183,41 @@ body{
 .plan__features li{
     margin:0.5rem ;
 }
-.button{
-    background-color: rgb(43, 43, 43);
-    color:#ffff;
+
+#contact{
+    background: white;
+    width:100vw;
+    padding:1.5rem;
+    margin:20px 0;
+    border-top:2px solid black;
+    border-bottom: 2px solid black;
+}
+#contact-form{
+    padding:1rem;
+}
+#contact-form input,
+#contact-form label,
+#contact-form textarea{
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+}
+#contact-form input,
+#contact-form textarea{
+    border:1px solid #ccc;
+    padding: 0.2rem 0.5rem;
     font:inherit;
-    border: 1.5px solid rgb(43,43,43);
+
+}
+#contact-form .button{
+    background-color: transparent;
+    color:black;
+    font:inherit;
+    border: 1px solid black;
     padding:0.5rem;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     cursor: pointer;
-    font-weight: bold;
+    width:20%;
 }
 
 .button:hover{
@@ -283,6 +317,30 @@ body{
 
 .open{
     display: block;
+}
+@media (min-width:55rem){
+    .plan{
+        display: inline-block;
+        width:20%; 
+        vertical-align: middle;
+        position: static;
+    }
+    iframe{
+        width:60rem;
+    }
+    .toggle-button{
+        display: none;
+    }
+    .main-nav{
+        display: inline-block;
+        text-align: right;
+        width:calc(100% - 74px);
+        vertical-align: middle;
+    }
+    #contact-form{
+        margin: auto;
+        width:25rem;
+    }
 }
 
 
