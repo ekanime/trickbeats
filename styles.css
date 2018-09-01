@@ -153,15 +153,15 @@ body{
     width:100%;
     margin:auto;
     text-align: center;
+    max-width: 1200px;
 
 }
 .plan{
     background: white;
     padding: 1rem;
-    margin:0.5rem;
+    margin:0.5rem auto;
     border: 2px solid black;
     font-size: 0.8rem;
-    max-width: 18.75rem;
     text-align: center;
     /* position: relative;
     left:26%; */
@@ -342,6 +342,7 @@ body{
         width:25rem;
     }
 }
+
 
 
 
