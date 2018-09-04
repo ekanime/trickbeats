@@ -7,6 +7,10 @@ body{
     margin:0;
     
 }
+h4{
+    color: white;
+    text-align: center;
+}
 .backdrop{
     position: fixed;
     display: none;
@@ -144,9 +148,6 @@ body{
     text-align: center;
     z-index: 0;
 }
-/* iframe{
-    width: 40rem;
-} */
 
 .plans-content{
     padding-top: 3.125rem;
@@ -201,11 +202,17 @@ body{
 }
 #soundcloud{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:70px 0;
 }
-.soundcloud__image-container{
+.sc-player{
+    width:450px;
+}
+.sc-player iframe{
+    max-width: 100%;
     width: 100%;
-    height:auto;
-    max-width: 40rem;
+    min-height: 450px;
 }
 
 #contact{
