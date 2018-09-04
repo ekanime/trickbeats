@@ -34,13 +34,13 @@ body{
     left:0;
     z-index: 1;
     border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
    
 }
-.main-header>div{
-    display: inline-block;
-    vertical-align: middle;
-}
+
 .main-header__brand{
     text-decoration: none;
     font-weight: bold;
@@ -48,18 +48,15 @@ body{
 }
 .main-nav{
     display:none;
-    text-align: right;
-    width:calc(100% - 74px);
-    vertical-align: middle;
 }
 
 .main-nav__items{
     margin:0;
     padding:0;
     list-style: none;
+    display: flex;
 }
 .main-nav__item{
-    display: inline-block;
     margin: 0 1rem;
 }
 
@@ -96,6 +93,7 @@ body{
     color:black;
     
 }
+
 #about{
     background: white;
     padding: 3.125rem;
@@ -182,6 +180,18 @@ body{
 }
 .plan__features li{
     margin:0.5rem ;
+}
+
+#soundcloud{
+    display: flex;
+}
+.soundcloud__image-container{
+    width: 100%;
+    height:auto;
+    max-width: 40rem;
+}
+.soundcloud__img{
+
 }
 
 #contact{
@@ -296,12 +306,24 @@ body{
     margin-top:3rem;
     background-color: rgba(29, 28, 28, 0.9);
     width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .main-footer__links{
     list-style:none;
     margin:0;
     padding:0;
-    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+}
+.main-footer__link-buttons{
+    margin:0;
+    padding:0;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: right; */
 }
 
 .main-footer__link,
@@ -332,10 +354,7 @@ body{
         display: none;
     }
     .main-nav{
-        display: inline-block;
-        text-align: right;
-        width:calc(100% - 74px);
-        vertical-align: middle;
+       display: flex;
     }
     #contact-form{
         margin: auto;
