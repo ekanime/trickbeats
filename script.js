@@ -1,7 +1,7 @@
 var backdrop = document.querySelector('.backdrop');
 var toggle = document.querySelector('.toggle-button');
 var mobileNav = document.querySelector('.mobile-nav');
-var heading = document.querySelector('h4');
+var heading = document.querySelector('#brand-name');
 
 
 

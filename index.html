@@ -22,13 +22,13 @@
                 <span class="toggle-button__bar"></span>
             </button>
             <a href="index.html" class="main-header__brand">
-                Trickbeats
+                <div id = "brand-name">Trickbeats</div>
             </a>
         </div>
         <nav class="main-nav">
             <ul class="main-nav__items">
                 <li class="main-nav__item">
-                    <a href="about.html">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li class="main-nav__item">
                     <a href="#beats">Beats</a>
@@ -45,13 +45,13 @@
     <nav class="mobile-nav">
         <ul class="mobile-nav__items">
             <li class="mobile-nav__item">
-                <a href="about.html">About</a>
+                <a href="#about">About</a>
             </li>
             <li class="mobile-nav__item">
-                <a href="index.html/#beats">Beats</a>
+                <a href="#beats">Beats</a>
             </li>
             <li class="mobile-nav__item">
-                <a href="index.html/#plans">Licensing</a>
+                <a href="#plans">Licensing</a>
             </li>
             <li class="mobile-nav__item">
                 <a href="#contact">Contact</a>
@@ -62,25 +62,34 @@
         <section class="overview">
             <h1 class="overview-text">TRICKBEATS</h1>
         </section>
-         <section class="store">
-            <div id="beats">
-                <h1 class="section-title">Beats</h1>
-                <div class="beats-frame">
-                    <iframe src="//www.beatstars.com/player/?storeId=79894" scrolling="no" width="100%" height="800" style="max-width:1024px;" frameborder="0" marginheight="0" marginwidth="0"> -- none -- </iframe>
-                </div>
+        <section id="about">
+            <h1 class="section-title">About</h1>
+            <p>Born and raised in Southern Nigeria,Trickbeats grew up listening to old school hip hop and afro music which made him develop an interest in audio production.</p>         
+            <p>Over the years, the sounds have evolved in conjunction with eras of music from the origins where classic jazz, soul and highlife were sampled and transformed into the most heard urban sounds in recent years. Trickbeats have evolved in the same manner to adapt to the most demanded styles of making music.He boasts a collection of beat tapes.</p>
+            <p>Trickbeats has leveraged the adaptations of digital music to combine elements of morden day hip-hop and Afro style drumming, soulful chords and funky progressions using synths to create his own unique style.</p>
+            <p> His primary tool of the trade is the piano and when he does his thing on the keys you will know he has been making music for a long time.</p>
+            <p>Trickbeats has truly mastered the art of sound and groove for that audio dope, you won’t stop listening to. </p>
+        </section>
+        <section id="beats">
+            <h1 class="section-title">Beats</h1>
+            <div class="beats-frame">
+                <iframe src="//www.beatstars.com/player/?storeId=79894" scrolling="no" width="100%" height="800" style="max-width:1024px;" frameborder="0" marginheight="0" marginwidth="0"> -- none -- </iframe>
             </div>
+        </section>
+         <section class="store">
             <div id="plans">
                 <h1 class="section-title">Licensing Info</h1>
                 <div class="plan__list">
                     <article class="plan">
                         <h1 class="plan__title">MP3</h1>
                         <h2 class="plan__price">$15.00</h2>
-                        <p>Perfect for starters looking to get out there using available resources</p>
+                        <p>Perfect for starters looking to get their thing out there</p>
                         <hr>
                         <ul class = "plan__features">
                             <li class = "plan__feature">Tagged MP3</li>
                             <li class = "plan__feature">Sell upto 1,000 copies</li>
                             <li class = "plan__feature">Keep 100% royalties</li>
+                            <li class = "plan__feature">Unlimited audio and video streaming</li>
                         </ul>
                     </article>
                     <article class="plan">
@@ -92,6 +101,7 @@
                             <li class = "plan__feature">Untagged WAV</li>
                             <li class = "plan__feature">Sell upto 5,000 copies</li>
                             <li class = "plan__feature">Keep 100% royalties</li>
+                            <li class = "plan__feature">Unlimited audio and video streaming</li>
                         </ul>
                     </article>
                     <article class="plan">
@@ -103,6 +113,7 @@
                             <li class = "plan__feature">Untagged WAV</li>
                             <li class = "plan__feature">Sell upto 100,000 copies</li>
                             <li class = "plan__feature">Keep 100% royalties</li>
+                            <li class = "plan__feature">Unlimited audio and video streaming</li>
                         </ul>
                     </article>
                     <article class="plan">
@@ -114,13 +125,8 @@
                             <li class = "plan__feature">Untagged WAV</li>
                             <li class = "plan__feature">Unlimited distribution</li>
                             <li class = "plan__feature">Keep 100% royalties</li>
+                            <li class = "plan__feature">Unlimited audio and video streaming</li>
                         </ul>
-                    </article>
-                    <article class="plan">
-                        <h1 class="plan__title">EXCLUSIVE</h1>
-                        <hr>
-                        <button class="plan__button" onclick="location.href='#contact'" >CONTACT ME</button>
-                        
                     </article>
                 </div>
             </div>
@@ -137,7 +143,7 @@
             </div>
         </section>
         <section id="contact">
-            <h1 class="section-title">Contact</h1>
+            <h1 class="section-title">Contact Me</h1>
             <form id='contact-form'action="https://formspree.io/trickbeatsent@gmail.com"
             method="POST">
                 <label for="name">Full Name</label>
